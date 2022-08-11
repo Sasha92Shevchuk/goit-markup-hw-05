@@ -4,6 +4,8 @@
   --accent-color: #2196f3;
   --accent-white-color: #ffffff;
   --card-ptf: 30px;
+  --animation-duration: 250ms;
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 p,
@@ -67,6 +69,10 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
+  transition-property: color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .logo:hover,
 .logo:focus {
@@ -95,6 +101,10 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -116,6 +126,10 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .contacts-nav .link:hover,
 .contacts-nav .link:focus {
@@ -200,6 +214,9 @@ body {
   min-width: 216px;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: background-color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .button:hover,
 .button:focus {
@@ -348,6 +365,10 @@ body {
   justify-content: center;
   align-items: center;
   color: #afb1b8;
+
+  transition-property: background-color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .soc-icon {
   fill: currentColor;
@@ -390,6 +411,10 @@ body {
   justify-content: center;
   align-items: center;
   fill: #afb1b8;
+
+  transition-property: fill, border;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 
 .clients-link:hover,
@@ -411,6 +436,10 @@ body {
 }
 .studio {
   color: var(--accent-white-color);
+
+  transition-property: color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 
 .studio:hover,
@@ -427,6 +456,10 @@ body {
   display: block;
   margin-bottom: 9px;
   color: var(--accent-white-color);
+
+  transition-property: color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .map-link:hover,
 .map-link:focus {
@@ -434,12 +467,13 @@ body {
 }
 .footer-link {
   display: block;
+  margin-bottom: 9px;
 
   color: rgba(255, 255, 255, 0.6);
-}
 
-.footer-link {
-  margin-bottom: 9px;
+  transition-property: color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 
 .footer-link:hover,
@@ -452,6 +486,10 @@ body {
 
 .footer > .container {
   display: flex;
+}
+
+.exhortation {
+  display: block;
 }
 
 .footer-soc {
@@ -522,6 +560,10 @@ a {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
@@ -557,6 +599,10 @@ a {
 .card-ptf-link {
   display: block;
   color: currentColor;
+
+  transition-property: box-shadow;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 
 .card-ptf-link:hover,
